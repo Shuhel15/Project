@@ -1,0 +1,260 @@
+body {
+  background: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: #ffffff;
+}
+.welcome {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.wel-pg {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.btn {
+  top: 669px;
+  left: 20px;
+  border: none;
+  width: 335px;
+  height: 46px;
+  width: 100%;
+  opacity: 1;
+  border-radius: 6px;
+}
+
+.primary {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6c25ff;
+}
+.light {
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #6c25ff4b;
+}
+
+h1 {
+  text-align: left;
+  font-size: 28px;
+  width: 200px;
+}
+
+h5 {
+  font-style: 13px;
+}
+
+p {
+  opacity: 0.6;
+  font-size: 18px;
+  color: #1d2226;
+  width: 250px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input-box input {
+  width: 93%;
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.input-box label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: #777;
+  background: #ffffff;
+  padding: 0 4px;
+  font-size: 13px;
+  transition: 0.25s;
+  pointer-events: none;
+}
+
+.input-box input:focus + label {
+  top: -8px;
+  font-size: 13px;
+  color: #6c25ff;
+}
+
+.disabled {
+  margin-top: 20px;
+  background: #cbcbcb;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+}
+
+/* ******************* */
+/* acoutn page */
+
+.account-page h2 {
+  color: #1d2226;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  height: 68px;
+  margin-left: 10px;
+}
+img {
+  border-radius: 100%;
+  width: 76px;
+  height: 76px;
+}
+.profile-section {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+.user-info h3 {
+  font-size: 15px;
+}
+.user-info p {
+  font-size: 14px;
+}
+
+.description {
+  width: auto;
+  margin-left: 10px;
+  font-size: 14px;
+  height: 75vh;
+}
+
+.divider {
+  margin-top: 20px;
+  border: 1px dashed #cbcbcb;
+}
+
+.image-wrapper {
+    width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background: #6c25ff;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+
+}
+
+span {
+  color: red;
+}
+
+.page p {
+  color: black;
+}
+.creat-btn {
+  margin-top: 27vh;
+}
+
+/* ***************Responsive ****************** */
+
+/* Small phones (320px – 375px) */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .wel-pg {
+    padding: 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .input-box input {
+    width: 98%;
+  }
+
+  .title {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  .profile-section {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .description {
+    margin-left: 0;
+    padding: 0 10px;
+    height: auto;
+  }
+}
+
+/* Normal phones (376px – 480px) */
+@media (max-width: 480px) {
+  .input-box input {
+    width: 94%;
+  }
+}
+
+/* Large phones (481px – 600px) */
+@media (max-width: 600px) {
+  .container {
+    height: 100vh;
+    padding: 10px;
+  }
+  .profile-section {
+    gap: 10px;
+  }
+}
